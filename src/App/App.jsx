@@ -6,7 +6,6 @@ const App = () => {
   const [hosts, setHosts] = useState([]);
   const [date, setDate] = useState("");
   const [reFetch, setReFetch] = useState(false);
-  const [isReFetchWas, setIsReFetchWas] = useState(false);
 
   // Функция форматирования времени
   const formatCurrentDate = (date) => {
@@ -53,12 +52,9 @@ const App = () => {
 
   useEffect(() => {
     // Устанавливает текущую дату и время при заходе на страницу и запускает первый запрос для получения статуса ответа
-    if (!isReFetchWas) {
-      setIsReFetchWas(true);
-      const dateNow = new Date();
-      setDate(formatCurrentDate(dateNow));
-      setReFetch(true);
-    }
+    const dateNow = new Date();
+    setDate(formatCurrentDate(dateNow));
+    setReFetch(true);
   }, []);
 
   useEffect(() => {
