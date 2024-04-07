@@ -1,0 +1,24 @@
+{
+  "hosts": [
+    {
+      "hostName": "https://jsonplaceholder.typicode.com",
+      "ip": "127.0.0.1",
+      "statusCode": "0"
+    },
+    {
+      "hostName": "https://jsonplaceholder.typicode.com/todos",
+      "ip": "127.0.0.1",
+      "statusCode": "0"
+    },
+    {
+      "hostName": "https://pokeapi.co/api/v2/pokemon",
+      "ip": "127.0.0.1",
+      "statusCode": "0"
+    },
+    {
+      "hostName": "https://pokeapi.co/api/v212312",
+      "ip": "127.0.0.1",
+      "statusCode": "0"
+    }
+  ]
+}

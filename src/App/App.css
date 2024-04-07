@@ -1,0 +1,71 @@
+.App {
+  margin: 0 auto;
+  max-width: 2000px;
+  padding: 20px 40px;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.table_container {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.table_point {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border-bottom: 2px solid #000;
+  padding: 15px;
+  align-self: start;
+  justify-content: start;
+}
+
+.table_point:last-of-type {
+  border: none;
+}
+
+.table_point > h2:nth-child(1) {
+  grid-column: 1 / 4;
+}
+.table_point > h2:nth-child(2) {
+  grid-column: 4 / 6;
+}
+.table_point > h2:nth-child(3) {
+  grid-column: 6 / 7;
+}
+
+.table_point > p:nth-child(1) {
+  grid-column: 1 / 4;
+}
+.table_point > p:nth-child(2) {
+  grid-column: 4 / 6;
+}
+.table_point > p:nth-child(3) {
+  grid-column: 6 / 7;
+}
